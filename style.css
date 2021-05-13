@@ -1,0 +1,71 @@
+h1 {
+    color: pink;
+    margin-left: 50px;
+}
+
+.header {
+    background-color: darkmagenta;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header *
+{
+    border: 10px solid green;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+p,h2{
+    text-align: center;
+}
+
+.item img
+{
+    width: 300px;
+    height: 300px;
+    border: grey 5px solid;
+}
+
+a:link
+{
+    color: indianred;
+}
+
+a:visited
+{
+    color: lawngreen;
+}
+
+.item
+{
+    position: relative;
+}
+
+.item p
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: lightcoral;
+    opacity:0;
+}
+
+.item:hover p
+{
+    opacity:1;
+}
+
+.item:hover img
+{
+    opacity:0.33;
+    transform: scale(0.7,0.7);
+}
